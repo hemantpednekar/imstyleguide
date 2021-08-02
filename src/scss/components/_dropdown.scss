@@ -1,0 +1,21 @@
+#ingram-theme{
+.dropdown{
+    border-radius: $dropdown-border-radius;   
+    min-width: $dropdown-min-width;
+    border:$dropdown-border-width solid $dropdown-border-color;
+
+    .fa{
+        position: absolute;
+        right: 5%;
+        top: 25%;
+    }
+    .dropdown-item{
+        font-size: 0.9rem;
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+}
+

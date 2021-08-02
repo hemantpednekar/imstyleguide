@@ -1,0 +1,25 @@
+<ng-template #popContent><table class="table small-text no-margin-bottom text-align-center">
+
+    <thead class="title">
+<tr>
+    <th class="border-right-lightgrey">Warehouse</th>
+    <th class="border-right-lightgrey text-align-center">Stock</th>
+        <th class="border-right-lightgrey text-align-center">On Order</th>
+        <th class="border-right-lightgrey text-align-center">Lead Time/ETA*</th>
+    
+    </tr>
+</thead>
+
+<tbody class="content"><tr><td class="text-align-left">Toronto</td><td>101</td><td>0</td><td></td></tr></tbody>
+</table></ng-template>
+<ng-template #popTitle>
+    In Stock
+</ng-template>
+<!-- <p [ngbPopover]="popContent" [popoverTitle]="popTitle" triggers="mouseenter:mouseleave" > 
+    101 in stock
+</p> -->
+
+<p  class="mr-2" [ngbPopover]="popContent" [autoClose]="true" triggers="mouseenter:mouseleave" [popoverTitle]="popTitle">
+    101 in stock
+  </p>
+

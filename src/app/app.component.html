@@ -1,0 +1,755 @@
+<style>
+
+</style>
+
+<header class="section-header">
+  <nav class="navbar navbar-dark navbar-expand p-0 bg-light">
+    <div class="container">
+        <ul class="navbar-nav d-none d-md-flex mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Payment</a></li>
+        </ul>
+        <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <app-ngb-dropdown></app-ngb-dropdown>
+        </li>
+      </ul> 
+    </div> 
+  </nav>
+
+
+  <section class="header-main border-bottom">
+    <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-2 col-6">
+        <a href="http://bootstrap-ecommerce.com" class="brand-wrap">
+          <img class="logo" alt="IMOnlie" src="https://caecommercestg2.ingrammicro.com/Site/Content/Images/logo_bb.png">
+        </a> 
+      </div>
+    <div class="col-lg-6 col-12 col-sm-12">
+      <form action="#" class="header-search">
+        <div class="input-group w-100">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="col-lg-4 col-sm-6 col-12">
+      <div class="widgets-wrap pull-right ">
+
+        <button type="button" class="btn btn-outline-secondary">Log in</button>
+
+      </div>
+    </div> 
+  </div> 
+    </div> 
+  </section>
+
+  <nav class="navbar navbar-main navbar-expand-lg navbar-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vendor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Boutiques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cloud</a>
+          </li>
+       </ul>
+      </div> 
+    </div> 
+  </nav>
+  </header>
+
+  <div class="container mt-5 ComponentTitle">
+    <h2>Common Page Header Section</h2>
+  </div>
+
+  <ul ngbNav #navbtn13="ngbNav" (activeId)="13" class="nav-tabs">
+    <li [ngbNavItem]="13">
+      <a ngbNavLink>Output</a>
+      <ng-template ngbNavContent>
+        <output id="code_btn_styles">
+          <section class="section-pagetop bg ">
+            <div class="container">
+              <div class="d-flex justify-content-between align-items-center">
+               <div>
+                  <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Best category</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Great articles</li>
+                    </ol>  
+                  </nav>
+                  <h2 class="title-page">Category products</h2>
+                  <span class="title-discription">Page Description</span>
+              </div>
+              <div class="action-items-title">
+                <nav class="navbar navbar-dark navbar-expand p-0 bg-light">        
+                      <ul class="navbar-nav d-none d-md-flex mr-auto">
+                      <li class="nav-item"><a class="nav-link" href="#">
+                        <span class="fa fa-download"></span>Download</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="#">
+                        <span class="fa fa-print"></span>Print</a></li>
+                      </ul>
+                </nav>
+              </div>
+            </div>
+            </div> 
+          </section>
+        </output>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="14">
+      <a ngbNavLink>HTML Code</a>
+      <ng-template ngbNavContent>
+        <pre>
+          &lt;section class="section-pagetop bg ">
+            &lt;div class="container">
+              &lt;div class="d-flex justify-content-between align-items-center">
+               &lt;div>
+                  &lt;nav>
+                    &lt;ol class="breadcrumb">
+                        &lt;li class="breadcrumb-item">&lt;a href="#">Home&lt;/a>&lt;/li>
+                        &lt;li class="breadcrumb-item">&lt;a href="#">Best category&lt;/a>&lt;/li>
+                        &lt;li class="breadcrumb-item active" aria-current="page">Great articles&lt;/li>
+                    &lt;/ol>  
+                  &lt;/nav>
+                  &lt;h2 class="title-page">Category products&lt;/h2>
+                  &lt;span class="title-discription">Page Description&lt;/span>
+              &lt;/div>
+              &lt;div class="action-items-title">
+                &lt;nav class="navbar navbar-dark navbar-expand p-0 bg-light">        
+                      &lt;ul class="navbar-nav d-none d-md-flex mr-auto">
+                      &lt;li class="nav-item">&lt;a class="nav-link" href="#">
+                        &lt;span class="fa fa-download">&lt;/span>Download&lt;/a>
+                      &lt;/li>
+                      &lt;li class="nav-item">&lt;a class="nav-link" href="#">
+                        &lt;span class="fa fa-print">&lt;/span>Print&lt;/a>&lt;/li>
+                      &lt;/ul>
+                &lt;/nav>
+              &lt;/div>
+            &lt;/div>
+            &lt;/div> 
+          &lt;/section>
+         </pre>
+      </ng-template>
+    </li>   
+  </ul>  
+  <div [ngbNavOutlet]="navbtn13" class="mt-2"></div>
+
+
+
+  <div class="container mt-5 ComponentTitle">
+    <h2>Alerts</h2>
+  </div>
+  
+
+  <div class="container mt-5">
+    <ul ngbNav #navbtn11="ngbNav" (activeId)="11" class="nav-tabs">
+    <li [ngbNavItem]="11">
+      <a ngbNavLink>Output</a>
+      <ng-template ngbNavContent>
+        <output id="code_btn_styles">
+          <app-ngb-alerts></app-ngb-alerts>
+        </output>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="12">
+      <a ngbNavLink>Angular Component HTML</a>
+      <ng-template ngbNavContent>
+        <pre>
+          &lt;p *ngFor="let alert of alerts">
+          &lt;ngb-alert [type]="alert.type" (closed)="close(alert)" > 
+          &lt;span [innerHTML]="alert.message"> &lt;/span>
+          &lt;/ngb-alert>
+          &lt;/p>
+          </pre>
+      </ng-template>
+    </li>
+    
+    <li [ngbNavItem]="13">
+      <a ngbNavLink>Angular Component Typescript</a>
+      <ng-template ngbNavContent>
+        <pre>
+          <code [innerHTML]="alertcode"></code>
+          </pre>
+      </ng-template>
+    </li>   
+  </ul>  
+  <div [ngbNavOutlet]="navbtn11" class="mt-2"></div>
+  </div>  
+
+  <div class="container mt-5 ComponentTitle">
+    <h2>Heading</h2>
+  </div>
+
+  <div class="container mt-5">
+    <ul ngbNav #navbtn9="ngbNav" (activeId)="9" class="nav-tabs">
+    <li [ngbNavItem]="9">
+      <a ngbNavLink>Output</a>
+      <ng-template ngbNavContent>
+        <output id="code_btn_styles">
+          <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+        </output>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="10">
+      <a ngbNavLink>HTML Code</a>
+      <ng-template ngbNavContent>
+        <pre>
+          &lt;h1>h1. Bootstrap heading&lt;/h1>
+          &lt;h2>h2. Bootstrap heading&lt;/h2>
+          &lt;h3>h3. Bootstrap heading&lt;/h3>
+          &lt;h4>h4. Bootstrap heading&lt;/h4>
+          &lt;h5>h5. Bootstrap heading&lt;/h5>
+          &lt;h6>h6. Bootstrap heading&lt;/h6></pre>
+      </ng-template>
+    </li>   
+  </ul>  
+  <div [ngbNavOutlet]="navbtn9" class="mt-2"></div>
+  </div>
+
+  <div class="container mt-5 ComponentTitle">
+    <h2>Button</h2>
+  </div>
+
+  <div class="container mt-5">
+    <ul ngbNav #navbtn2="ngbNav" (activeId)="5" class="nav-tabs">
+    <li [ngbNavItem]="5">
+      <a ngbNavLink>Output</a>
+      <ng-template ngbNavContent>
+        <output id="code_btn_styles">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link">Link</button>
+        </output>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="6">
+      <a ngbNavLink>HTML Code</a>
+      <ng-template ngbNavContent>
+        <pre>
+          &lt;button type="button" class="btn btn-primary">Primary&lt;/button>
+          &lt;button type="button" class="btn btn-secondary">Secondary&lt;/button>
+          &lt;button type="button" class="btn btn-success">Success&lt;/button>
+          &lt;button type="button" class="btn btn-danger">Danger&lt;/button>
+          &lt;button type="button" class="btn btn-warning">Warning&lt;/button>
+          &lt;button type="button" class="btn btn-info">Info&lt;/button>
+          &lt;button type="button" class="btn btn-light">Light&lt;/button>
+          &lt;button type="button" class="btn btn-dark">Dark&lt;/button>
+          &lt;button type="button" class="btn btn-link">Link&lt;/button></pre>
+      </ng-template>
+    </li>   
+  </ul>  
+  <div [ngbNavOutlet]="navbtn2" class="mt-2"></div>
+  </div>
+  
+  <div class="container mt-5">
+    <ul ngbNav #navbtn3="ngbNav" (activeId)="7" class="nav-tabs">
+    <li [ngbNavItem]="7">
+      <a ngbNavLink>Output</a>
+      <ng-template ngbNavContent>
+        <output id="code_btn_styles">
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+        </output>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="8">
+      <a ngbNavLink>HTML Code</a>
+      <ng-template ngbNavContent>
+        <pre>
+          &lt;button type="button" class="btn btn-outline-primary">Primary&lt;/button>
+          &lt;button type="button" class="btn btn-outline-secondary">Secondary&lt;/button>
+          &lt;button type="button" class="btn btn-outline-success">Success&lt;/button>
+          &lt;button type="button" class="btn btn-outline-danger">Danger&lt;/button>
+          &lt;button type="button" class="btn btn-outline-warning">Warning&lt;/button>
+          &lt;button type="button" class="btn btn-outline-info">Info&lt;/button>
+          &lt;button type="button" class="btn btn-outline-light">Light&lt;/button>
+          &lt;button type="button" class="btn btn-outline-dark">Dark&lt;/button>
+          &lt;button type="button" class="btn btn-outline-link">Link&lt;/button></pre>
+      </ng-template>
+    </li>   
+  </ul>  
+  <div [ngbNavOutlet]="navbtn3" class="mt-2"></div>
+  </div>
+  
+  <div class="container mt-5">
+    <ul ngbNav #navbtn1="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink>Output</a>
+      <ng-template ngbNavContent>
+        <output id="code_btn_styles">
+          <a href="#" class="btn btn-primary"> <span class="text">Button</span> <i class="fa fa-shopping-cart"></i> </a>
+        <a href="#" class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> <span class="text"> With icon</span> </a>
+        <a href="#" class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> </a>
+        </output>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>HTML Code</a>
+      <ng-template ngbNavContent>
+        <pre>
+          &lt;a href="#" class="btn btn-primary">  &lt;span class="text">Button &lt;/span>  &lt;i class="fa fa-shopping-cart"> &lt;/i>  &lt;/a>
+          &lt;a href="#" class="btn btn-primary">  &lt;i class="fa fa-shopping-cart"> &lt;/i>  &lt;span class="text"> With icon &lt;/span>  &lt;/a>
+          &lt;a href="#" class="btn btn-primary">  &lt;i class="fa fa-shopping-cart"> &lt;/i>  &lt;/a></pre>
+      </ng-template>
+    </li>   
+  </ul>  
+  <div [ngbNavOutlet]="navbtn1" class="mt-2"></div>
+  </div>
+
+  <div class="container mt-5">
+  <ul ngbNav #nav1="ngbNav" (activeId)="3" class="nav-tabs">
+  <li [ngbNavItem]="3">
+    <a ngbNavLink>Output</a>
+    <ng-template ngbNavContent>
+      <output id="code_btn_styles">
+        <a href="#" class="btn btn-sm btn-primary"> Small </a>
+        <a href="#" class="btn btn-primary"> Normal </a>
+        <a href="#" class="btn btn-lg btn-primary"> Large </a>
+        </output>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="4">
+    <a ngbNavLink>HTML Code</a>
+    <ng-template ngbNavContent>
+      <pre>
+        &lt;a href="#" class="btn btn-sm btn-primary"> Small &lt;/a>
+        &lt;a href="#" class="btn btn-primary"> Normal &lt;/a>
+        &lt;a href="#" class="btn btn-lg btn-primary"> Large &lt;/a></pre>
+    </ng-template>
+  </li> 
+</ul>
+<div [ngbNavOutlet]="nav1" class="mt-2"></div>
+</div>
+
+<div class="container mt-5 ComponentTitle">
+  <h2>Input Text</h2>
+</div>
+
+ <div class="container mt-5">
+    <ul ngbNav #navbtn15="ngbNav" (activeId)="15" class="nav-tabs">
+    <li [ngbNavItem]="15">
+      <a ngbNavLink>Output</a>
+      <ng-template ngbNavContent>
+        <output id="code_btn_styles">
+          <div class="form-group  col-md-4">
+            <input type="text" placeholder="Type here" class="form-control" name="">
+          </div>
+          <div class="form-group  col-md-4">
+            <input type="password" placeholder="Password" class="form-control" name="">
+          </div>
+          <div class="form-group  col-md-4">
+            <input class="form-control" type="text" placeholder="Readonly input " readonly="">
+          </div>
+        </output>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="16">
+      <a ngbNavLink>HTML Code</a>
+      <ng-template ngbNavContent>
+        <pre>
+&lt;div class="form-group">
+	&lt;input type="text" placeholder="Type here" class="form-control" name="">
+&lt;/div>
+&lt;div class="form-group">
+	&lt;input type="password" placeholder="Password" class="form-control" name="">
+&lt;/div>
+&lt;div class="form-group">
+	&lt;input class="form-control" type="text" placeholder="Readonly input " readonly="">
+&lt;/div></pre>
+      </ng-template>
+    </li>   
+  </ul>  
+  <div [ngbNavOutlet]="navbtn15" class="mt-2"></div>
+  </div>
+
+  <div class="container mt-5 ComponentTitle">
+    <h2>Select Box And Text Area</h2>
+  </div>
+  
+   <div class="container mt-5">
+      <ul ngbNav #navbtn17="ngbNav" (activeId)="17" class="nav-tabs">
+      <li [ngbNavItem]="17">
+        <a ngbNavLink>Output</a>
+        <ng-template ngbNavContent>
+          <output id="code_btn_styles">
+            <div class="form-group col-md-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div> 
+
+            <div class="form-group col-md-4">
+              <label>Label of textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" spellcheck="false" style="margin-top: 0px; margin-bottom: 0px; height: 69px;"></textarea>
+              <small class="form-text text-muted"> Maximum character is 250 letters </small>
+            </div>
+          </output>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="18">
+        <a ngbNavLink>HTML Code</a>
+        <ng-template ngbNavContent>
+          <pre>
+            &lt;div class="form-group">
+            &lt;select class="form-select" aria-label="Default select example">
+              &lt;option selected>Open this select menu&lt;/option>
+              &lt;option value="1">One&lt;/option>
+              &lt;option value="2">Two&lt;/option>
+              &lt;option value="3">Three&lt;/option>
+            &lt;/select>
+          &lt;/div> 
+
+
+
+        
+          &lt;div class="form-group">
+          &lt;label>Label of textarea&lt;/label>
+          &lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3" spellcheck="false" style="margin-top: 0px; margin-bottom: 0px; height: 69px;">&lt;/textarea>
+          &lt;small class="form-text text-muted"> Maximum character is 250 letters &lt;/small>
+        &lt;/div>
+        </pre>
+        </ng-template>
+      </li>   
+    </ul>  
+    <div [ngbNavOutlet]="navbtn17" class="mt-2"></div>
+    </div>
+
+
+  <div class="container mt-5 ComponentTitle">
+      <h2>Custom Checkbox</h2>
+  </div>
+    
+  <div class="container mt-5">
+        <ul ngbNav #navbtn19="ngbNav" (activeId)="19" class="nav-tabs">
+        <li [ngbNavItem]="19">
+          <a ngbNavLink>Output</a>
+          <ng-template ngbNavContent>
+            <output id="code_btn_styles">
+              <div class="form-group col-md-4">
+                <label class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" id="customCheck1" type="checkbox">
+                  <div class="custom-control-label">Unchecked</div>
+                </label>
+                <label class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" id="customCheck2" type="checkbox" checked="">
+                  <div class="custom-control-label">Checked</div>
+                </label>
+                <label class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" id="customCheck3" type="checkbox" disabled="">
+                  <div class="custom-control-label">Disabled Unchecked</div>
+                </label>
+                <label class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" id="customCheck4" type="checkbox" checked disabled>
+                  <div class="custom-control-label">Disabled checked</div>
+                </label>
+              </div> 
+  
+             
+            </output>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="20">
+          <a ngbNavLink>HTML Code</a>
+          <ng-template ngbNavContent>
+            <pre>
+            &lt;label class="custom-control custom-checkbox mb-3">
+              &lt;input class="custom-control-input" id="customCheck1" type="checkbox">
+              &lt;div class="custom-control-label">Unchecked&lt;/div>
+            &lt;/label>
+            &lt;label class="custom-control custom-checkbox mb-3">
+              &lt;input class="custom-control-input" id="customCheck2" type="checkbox" checked="">
+              &lt;div class="custom-control-label">Checked&lt;/div>
+            &lt;/label>
+            &lt;label class="custom-control custom-checkbox mb-3">
+              &lt;input class="custom-control-input" id="customCheck3" type="checkbox" disabled="">
+              &lt;div class="custom-control-label">Disabled Unchecked&lt;/div>
+            &lt;/label>
+            &lt;label class="custom-control custom-checkbox mb-3">
+              &lt;input class="custom-control-input" id="customCheck4" type="checkbox" checked disabled>
+              &lt;div class="custom-control-label">Disabled checked&lt;/div>
+            &lt;/label>
+          </pre>
+          </ng-template>
+        </li>   
+      </ul>  
+      <div [ngbNavOutlet]="navbtn19" class="mt-2"></div>
+  </div>
+
+
+  <div class="container mt-5 ComponentTitle">
+      <h2>Custom Radio Buttons</h2>
+  </div>
+    
+  <div class="container mt-5">
+        <ul ngbNav #navbtn21="ngbNav" (activeId)="21" class="nav-tabs">
+        <li [ngbNavItem]="21">
+          <a ngbNavLink>Output</a>
+          <ng-template ngbNavContent>
+            <output id="code_btn_styles">
+              <div class="form-group col-md-4">
+                <label class="custom-control custom-radio mb-3">
+                  <input class="custom-control-input" name="myselection1" type="radio">
+                  <div class="custom-control-label">Unchecked</div>
+                </label>
+                <label class="custom-control custom-radio mb-3">
+                  <input class="custom-control-input" name="myselection1" type="radio" checked="">
+                  <div class="custom-control-label">Checked</div>
+                </label>
+                <label class="custom-control custom-radio mb-3">
+                  <input class="custom-control-input" type="radio" disabled="">
+                  <div class="custom-control-label">Disabled Unchecked</div>
+                </label>
+                <label class="custom-control custom-radio mb-3">
+                  <input class="custom-control-input" type="radio" checked="" disabled="">
+                  <div class="custom-control-label">Disabled checked</div>
+                </label>
+              </div> 
+  
+             
+            </output>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="22">
+          <a ngbNavLink>HTML Code</a>
+          <ng-template ngbNavContent>
+            <pre>
+            &lt;label class="custom-control custom-radio mb-3">
+              &lt;input class="custom-control-input" name="myselection1" type="radio">
+              &lt;div class="custom-control-label">Unchecked&lt;/div>
+            &lt;/label>
+            &lt;label class="custom-control custom-radio mb-3">
+              &lt;input class="custom-control-input" name="myselection1" type="radio" checked="">
+              &lt;div class="custom-control-label">Checked&lt;/div>
+            &lt;/label>
+            &lt;label class="custom-control custom-radio mb-3">
+              &lt;input class="custom-control-input" type="radio" disabled="">
+              &lt;div class="custom-control-label">Disabled Unchecked&lt;/div>
+            &lt;/label>
+            &lt;label class="custom-control custom-radio mb-3">
+              &lt;input class="custom-control-input" type="radio" checked="" disabled="">
+              &lt;div class="custom-control-label">Disabled checked&lt;/div>
+            &lt;/label>
+          </pre>
+          </ng-template>
+        </li>   
+      </ul>  
+      <div [ngbNavOutlet]="navbtn21" class="mt-2"></div>
+  </div>
+
+  
+  <div class="container mt-5 ComponentTitle">
+      <h2>Drop Down</h2>
+      <app-ngb-dropdown></app-ngb-dropdown>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label>First name</label>
+      <app-ngb-dropdown></app-ngb-dropdown>
+    </div>
+    <div class="col">
+      <label>First name</label>
+      <input type="text" class="form-control" placeholder="">
+    </div>
+		<div class="col">
+			<label>First name</label>
+		  	<input type="text" class="form-control" placeholder="">
+		</div> <!-- form-group end.// -->
+		<div class="col">
+			<label>Last name</label>
+		  	<input type="text" class="form-control" placeholder="">
+		</div> <!-- form-group end.// -->
+	</div>
+
+
+  <!-- <div class="col-sm-3">
+    <div class="form-group">
+        <label>Date:</label>
+        <div class="input-group">
+            <input name="date" class="form-control" ngbDatepicker #d="ngbDatepicker" [(ngModel)]="date" required />
+            <span class="input-group-append">
+                <button type="button" class="btn btn-outline-secondary btn-sm" (click)="d.toggle()">
+                    <i class="fas fa-calendar-alt fa-fw"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</div> -->
+
+
+<section class="section-content padding-y">
+    <div class="container">
+    
+      <div class="row">
+        <aside class="col-md-3">
+          <div class="card">
+            <article class="filter-group">
+              <header class="card-header">
+                <a href="#" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+                aria-controls="collapse1">
+                  <i class="pull-left fa  fa-lg padding-top-vsm" 
+                  [ngClass] = "{'fa-angle-up': isCollapsed,'fa-angle-down': !isCollapsed}"></i>
+                  <h6 class="title">Brands </h6>
+                </a>
+              </header>
+            
+              <div class="filter-content collapse show"  #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" >
+                <div class="card-body">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Microsoft</div>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Apple</div>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Samsung</div>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Lenovo</div>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <div class="custom-control-label">IBM </div>
+                  </label>
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <div class="custom-control-label">Alineware </div>
+                  </label>
+            </div> <!-- card-body.// -->
+              </div>
+            </article> 
+          </div>
+          <div class="card margin-top-sm">
+            <article class="filter-group ">
+              <header class="card-header">
+                <a href="#" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+                aria-controls="navbarTogglerDemo02" data-target="#navbarTogglerDemo02">
+                  <i class="pull-left fa  fa-lg padding-top-vsm" 
+                  [ngClass] = "{'fa-angle-up': isCollapsed,'fa-angle-down': !isCollapsed}"></i>
+                  <h6 class="title">Test </h6>
+                </a>
+              </header>
+            
+              <div class="filter-content collapse3 show" id="navbarTogglerDemo02" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" >
+                <div class="card-body">
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
+                    <div class="custom-control-label">Any condition</div>
+                  </label>
+          
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" class="custom-control-input">
+                    <div class="custom-control-label">Brand new </div>
+                  </label>
+          
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" class="custom-control-input">
+                    <div class="custom-control-label">Used items</div>
+                  </label>
+          
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="myfilter_radio" class="custom-control-input">
+                    <div class="custom-control-label">Very old</div>
+                  </label>
+                </div><!-- card-body.// -->
+              </div>
+            </article> <!-- filter-group .// -->
+          </div>
+        </aside>
+        <main class="col-md-9">
+          <article class="card card-product-list">
+            <div class="row no-gutters">
+              <aside class="col-md-2">
+                <a href="#" class="img-wrap"><img src="https://inquirecontent1.ingrammicro.com/300/1040919282.jpg"></a>
+              </aside> <!-- col.// -->
+              <div class="col-md-6">
+                <div class="info-main">
+                  <a href="#" class="title"> HPE Smart Array P408i-c SR Gen10 Controller - 12Gb/s SAS, Serial ATA/600 - PCI Express 3.0 x8 - Plug-in Module - RAID Supported - 0, 1, 5, 6, 10, 50, 60, 1 ADM, 10 ADM RAID Level - 8 SAS Port(s) Internal - PC, Linux - 2 GB Flash Backed Cache </a>                 
+                 
+                
+                
+                
+                </div> <!-- info-main.// -->
+                <div class="text-sm padding-top-vsm">
+                  
+                  <span><strong>VPN</strong> :1234SD</span> | <span><strong>SKU</strong> :33333SD</span>| <span><strong>UPC</strong> :33333SD</span>| <span><strong>LANG</strong> :EN</span>
+                </div>
+              </div> <!-- col.// -->
+              <aside class="col-sm-2">
+              
+              <app-ngb-pophover></app-ngb-pophover>
+              </aside>
+              <aside class="col-sm-2">
+                <div class="info-aside text-right">
+                  <a href="#" class="btn-link float-right"> <i class="fa fa-heart"></i></a>
+                  <div class="price-wrap">
+                    <span class="price h5"> $62 </span>	
+                  </div> <!-- info-price-detail // -->          
+                  
+                  <p>
+                    <a href="#" class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> </a>
+                  </p>
+                </div> <!-- info-aside.// -->
+              </aside> <!-- col.// -->
+            </div> <!-- row.// -->
+          </article>
+        </main>
+      <div>
+    </div>
+  <section>
+  <!-- Unordered list-->  
+
+  
+  
+
+
+
+
+

@@ -1,0 +1,8 @@
+
+
+<p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)" > 
+        <span [innerHTML]="alert.message"></span>
+    </ngb-alert>
+  </p>
+  
