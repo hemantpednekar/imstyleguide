@@ -2631,13 +2631,18 @@ article:after,
 #ingram-theme body {
   margin: 0;
   font-family: "HelveticaNeue-Thin", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   font-weight: 400;
   line-height: 1.5;
   color: #343a40;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@media (min-width: 1200px) {
+  #ingram-theme body {
+    font-size: 1.4rem;
+  }
 }
 #ingram-theme hr {
   margin: 1rem 0;
@@ -2656,42 +2661,52 @@ article:after,
   line-height: 1.3;
 }
 #ingram-theme h1, #ingram-theme .h1 {
-  font-size: calc(1.35rem + 1.2vw);
+  font-size: calc(1.475rem + 2.7vw);
 }
 @media (min-width: 1200px) {
   #ingram-theme h1, #ingram-theme .h1 {
-    font-size: 2.25rem;
+    font-size: 3.5rem;
   }
 }
 #ingram-theme h2, #ingram-theme .h2 {
-  font-size: calc(1.305rem + 0.66vw);
+  font-size: calc(1.405rem + 1.86vw);
 }
 @media (min-width: 1200px) {
   #ingram-theme h2, #ingram-theme .h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 }
 #ingram-theme h3, #ingram-theme .h3 {
-  font-size: calc(1.2825rem + 0.39vw);
+  font-size: calc(1.37rem + 1.44vw);
 }
 @media (min-width: 1200px) {
   #ingram-theme h3, #ingram-theme .h3 {
-    font-size: 1.575rem;
+    font-size: 2.45rem;
   }
 }
 #ingram-theme h4, #ingram-theme .h4 {
-  font-size: calc(1.26rem + 0.12vw);
+  font-size: calc(1.335rem + 1.02vw);
 }
 @media (min-width: 1200px) {
   #ingram-theme h4, #ingram-theme .h4 {
-    font-size: 1.35rem;
+    font-size: 2.1rem;
   }
 }
 #ingram-theme h5, #ingram-theme .h5 {
-  font-size: 1.125rem;
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  #ingram-theme h5, #ingram-theme .h5 {
+    font-size: 1.75rem;
+  }
 }
 #ingram-theme h6, #ingram-theme .h6 {
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
+}
+@media (min-width: 1200px) {
+  #ingram-theme h6, #ingram-theme .h6 {
+    font-size: 1.4rem;
+  }
 }
 #ingram-theme p {
   margin-top: 0;
@@ -2967,8 +2982,13 @@ a > #ingram-theme code {
   display: none !important;
 }
 #ingram-theme .lead {
-  font-size: 1.125rem;
+  font-size: calc(1.3rem + 0.6vw);
   font-weight: 300;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .lead {
+    font-size: 1.75rem;
+  }
 }
 #ingram-theme .display-1 {
   font-size: calc(1.625rem + 4.5vw);
@@ -3050,7 +3070,12 @@ a > #ingram-theme code {
 }
 #ingram-theme .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.125rem;
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  #ingram-theme .blockquote {
+    font-size: 1.75rem;
+  }
 }
 #ingram-theme .blockquote > :last-child {
   margin-bottom: 0;
@@ -4167,7 +4192,7 @@ a > #ingram-theme code {
 #ingram-theme .col-form-label-sm {
   padding-top: calc(0.35rem + 1px);
   padding-bottom: calc(0.35rem + 1px);
-  font-size: 0.738rem;
+  font-size: 1.148rem;
 }
 #ingram-theme .form-text {
   margin-top: 0.25rem;
@@ -4178,7 +4203,7 @@ a > #ingram-theme code {
   display: block;
   width: 100%;
   padding: 0.45rem 0.85rem;
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -4190,6 +4215,11 @@ a > #ingram-theme code {
           appearance: none;
   border-radius: 0.37rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .form-control {
+    font-size: 1.4rem;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   #ingram-theme .form-control {
@@ -4284,7 +4314,7 @@ a > #ingram-theme code {
 #ingram-theme .form-control-sm {
   min-height: calc(1.2em + 0.7rem + 2px);
   padding: 0.35rem 0.5rem;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   border-radius: 0.2rem;
 }
 #ingram-theme .form-control-sm::file-selector-button {
@@ -4342,7 +4372,7 @@ a > #ingram-theme code {
   display: block;
   width: 100%;
   padding: 0.45rem 2.55rem 0.45rem 0.85rem;
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -4356,6 +4386,11 @@ a > #ingram-theme code {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .form-select {
+    font-size: 1.4rem;
+  }
 }
 #ingram-theme .form-select:focus {
   border-color: #ff8080;
@@ -4377,7 +4412,7 @@ a > #ingram-theme code {
   padding-top: 0.35rem;
   padding-bottom: 0.35rem;
   padding-left: 0.5rem;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
 }
 #ingram-theme .form-select-lg {
   padding-top: 0.6rem;
@@ -4387,7 +4422,7 @@ a > #ingram-theme code {
 }
 #ingram-theme .form-check {
   display: block;
-  min-height: 1.35rem;
+  min-height: 2.1rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -4652,7 +4687,7 @@ a > #ingram-theme code {
   display: flex;
   align-items: center;
   padding: 0.45rem 0.85rem;
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -4661,6 +4696,11 @@ a > #ingram-theme code {
   background-color: #eeeeee;
   border: 1px solid #ced4da;
   border-radius: 0.37rem;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .input-group-text {
+    font-size: 1.4rem;
+  }
 }
 #ingram-theme .input-group-lg > .form-control,
 #ingram-theme .input-group-lg > .form-select,
@@ -4675,7 +4715,7 @@ a > #ingram-theme code {
 #ingram-theme .input-group-sm > .input-group-text,
 #ingram-theme .input-group-sm > .btn {
   padding: 0.35rem 0.5rem;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   border-radius: 0.2rem;
 }
 #ingram-theme .input-group-lg > .form-select,
@@ -4712,7 +4752,7 @@ a > #ingram-theme code {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   line-height: 1.5;
   color: #000;
   background-color: rgba(0, 181, 23, 0.9);
@@ -4792,7 +4832,7 @@ a > #ingram-theme code {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   line-height: 1.5;
   color: #000;
   background-color: rgba(250, 52, 52, 0.9);
@@ -4870,9 +4910,14 @@ a > #ingram-theme code {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.45rem 0.85rem;
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   border-radius: 0.37rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .btn {
+    font-size: 1.4rem;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   #ingram-theme .btn {
@@ -5496,7 +5541,7 @@ a > #ingram-theme code {
 }
 #ingram-theme .btn-sm, #ingram-theme .btn-group-sm > .btn {
   padding: 0.35rem 0.5rem;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   border-radius: 0.37rem;
 }
 #ingram-theme .fade {
@@ -5552,7 +5597,7 @@ a > #ingram-theme code {
   min-width: 10rem;
   padding: 0.1rem 0;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   color: #343a40;
   text-align: left;
   list-style: none;
@@ -5560,6 +5605,11 @@ a > #ingram-theme code {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.37rem;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .dropdown-menu {
+    font-size: 1.4rem;
+  }
 }
 #ingram-theme .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -5757,7 +5807,7 @@ a > #ingram-theme code {
   display: block;
   padding: 0.1rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   color: #545454;
   white-space: nowrap;
 }
@@ -5994,11 +6044,16 @@ a > #ingram-theme code {
   justify-content: space-between;
 }
 #ingram-theme .navbar-brand {
-  padding-top: 0.33125rem;
-  padding-bottom: 0.33125rem;
+  padding-top: 0.2375rem;
+  padding-bottom: 0.2375rem;
   margin-right: 1rem;
-  font-size: 1.125rem;
+  font-size: calc(1.3rem + 0.6vw);
   white-space: nowrap;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .navbar-brand {
+    font-size: 1.75rem;
+  }
 }
 #ingram-theme .navbar-brand:hover, #ingram-theme .navbar-brand:focus {
   text-decoration: none;
@@ -6028,12 +6083,17 @@ a > #ingram-theme code {
 }
 #ingram-theme .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.125rem;
+  font-size: calc(1.3rem + 0.6vw);
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.37rem;
   transition: box-shadow 0.15s ease-in-out;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .navbar-toggler {
+    font-size: 1.75rem;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   #ingram-theme .navbar-toggler {
@@ -6408,7 +6468,7 @@ a > #ingram-theme code {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   color: #343a40;
   text-align: left;
   background-color: #fff;
@@ -6416,6 +6476,11 @@ a > #ingram-theme code {
   border-radius: 0;
   overflow-anchor: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+@media (min-width: 1200px) {
+  #ingram-theme .accordion-button {
+    font-size: 1.4rem;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   #ingram-theme .accordion-button {
@@ -6587,7 +6652,12 @@ a > #ingram-theme code {
 }
 #ingram-theme .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  #ingram-theme .pagination-lg .page-link {
+    font-size: 1.75rem;
+  }
 }
 #ingram-theme .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.45rem;
@@ -6599,7 +6669,7 @@ a > #ingram-theme code {
 }
 #ingram-theme .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
 }
 #ingram-theme .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -6748,7 +6818,7 @@ a > #ingram-theme code {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.675rem;
+  font-size: 1.05rem;
   background-color: #eeeeee;
   border-radius: 0.37rem;
 }
@@ -7454,7 +7524,7 @@ a > #ingram-theme code {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -7550,7 +7620,7 @@ a > #ingram-theme code {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.738rem;
+  font-size: 1.148rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -7639,11 +7709,16 @@ a > #ingram-theme code {
 #ingram-theme .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: calc(1.265rem + 0.18vw);
   background-color: #f7f7f7;
   border-bottom: 1px solid #dedede;
   border-top-left-radius: calc(0.45rem - 1px);
   border-top-right-radius: calc(0.45rem - 1px);
+}
+@media (min-width: 1200px) {
+  #ingram-theme .popover-header {
+    font-size: 1.4rem;
+  }
 }
 #ingram-theme .popover-header:empty {
   display: none;
@@ -8850,22 +8925,22 @@ a > #ingram-theme code {
   font-family: var(--bs-font-monospace) !important;
 }
 #ingram-theme .fs-1 {
-  font-size: calc(1.35rem + 1.2vw) !important;
+  font-size: calc(1.475rem + 2.7vw) !important;
 }
 #ingram-theme .fs-2 {
-  font-size: calc(1.305rem + 0.66vw) !important;
+  font-size: calc(1.405rem + 1.86vw) !important;
 }
 #ingram-theme .fs-3 {
-  font-size: calc(1.2825rem + 0.39vw) !important;
+  font-size: calc(1.37rem + 1.44vw) !important;
 }
 #ingram-theme .fs-4 {
-  font-size: calc(1.26rem + 0.12vw) !important;
+  font-size: calc(1.335rem + 1.02vw) !important;
 }
 #ingram-theme .fs-5 {
-  font-size: 1.125rem !important;
+  font-size: calc(1.3rem + 0.6vw) !important;
 }
 #ingram-theme .fs-6 {
-  font-size: 0.9rem !important;
+  font-size: calc(1.265rem + 0.18vw) !important;
 }
 #ingram-theme .fst-italic {
   font-style: italic !important;
@@ -11104,16 +11179,22 @@ a > #ingram-theme code {
 }
 @media (min-width: 1200px) {
   #ingram-theme .fs-1 {
-    font-size: 2.25rem !important;
+    font-size: 3.5rem !important;
   }
   #ingram-theme .fs-2 {
-    font-size: 1.8rem !important;
+    font-size: 2.8rem !important;
   }
   #ingram-theme .fs-3 {
-    font-size: 1.575rem !important;
+    font-size: 2.45rem !important;
   }
   #ingram-theme .fs-4 {
-    font-size: 1.35rem !important;
+    font-size: 2.1rem !important;
+  }
+  #ingram-theme .fs-5 {
+    font-size: 1.75rem !important;
+  }
+  #ingram-theme .fs-6 {
+    font-size: 1.4rem !important;
   }
 }
 @media print {
